@@ -3,10 +3,6 @@
 
    <head>
    <!--
-      New Perspectives on HTML and CSS
-      Tutorial 6
-      Case Problem 2
-
       The Spice Bowl
       Author: 
       Date:   
@@ -151,37 +147,68 @@
                 <label for="country">Country</label>
                     <input type="text" id="country" value="United States" />
                 <label for="phone">Phone</label>
-                    <input type="phone" id="phone" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required="required" />
-                    
+                    <input type="phone" id="phone" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required="required" />                   
             </fieldset>
             
             <fieldset id="creditcard" name="creditcard">
                 <legend>Credit Card(required)</legend>
                 <fieldset class="otionGroup" name="optionGroup">
                     <label>
-                        <input type="radio" id="ccard" value="diners">
+                        <input type="radio" name="ccard" id="ccard" value="diners">
                         <img src="images/diners.png" alt="Diners"
                     </label>
                     <label>
-                        <input type="radio" id="ccard" value="discover">
+                        <input type="radio" name="ccard" id="ccard" value="discover">
                         <img src="images/discover.png" alt="Discover"
                     </label>
                     <label>
-                        <input type="radio" id="ccard" value="master">
+                        <input type="radio" name="ccard" id="ccard" value="master">
                         <img src="images/master.png" alt="Master"
                     </label>
                     <label>
-                        <input type="radio" id="ccard" value="visa">
+                        <input type="radio" name="ccard" id="ccard" value="visa">
                         <img src="images/visa.png" alt="Visa"
                     </label>
                 </fieldset>
                 
-            </fieldset>
-            
+                <label for="ccardnumber">Credit Card Number</label>
+                    <input type="number" id="ccardnumber" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" required="required">
+                <label for="ccardmonth">Expiration Date</label>
+                    <select name="ccardmonth" id="ccardmonth">
+                       <option value="month">--Month--</option>
+                        <option value="january">January(01)</option>
+                        <option value="february">January(02)</option>
+                        <option value="march">March(03)</option>
+                        <option value="april">April(04)</option>
+                        <option value="may">May(05)</option>
+                        <option value="june">June(06)</option>
+                        <option value="july">July(07)</option>
+                        <option value="august">August(08)</option>
+                        <option value="september">September(09)</option>
+                        <option value="october">October(10)</option>
+                        <option value="november">Nobember(11)</option>
+                        <option value="december">December(12)</option>
+                    </select>  
+                    <select name="ccardyear" id="ccardyear">
+                        <option value="year">--Year--</option>   
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                    </select>  
+                <label for="csc">
+                    <input type="number" id="csc" maxlength="3" placeholder="nnn"
+                            pattern="^\d{3}$" required="required">
+                </label>          
+            </fieldset>  
             <fieldset id="info" name="info">
                 <legend>Additional Information</legend>
-            </fieldset>
-            
+                <label for="email">Contact Email</label>
+                    <input type="email" name="email" id="email">
+                <label for="notes">Special Notes</label>
+                <textarea rows="5" cols="20" name="notes" id="notes"></textarea>
+            </fieldset>  
+            <input type="submit" value="Submit Order"          
         </form>
         
          <footer>
@@ -190,9 +217,7 @@
                      &#183; (404) 555- 8711
             </address>
          </footer>
-
       </section>
-
 
       <aside>
          <h1>The Spice Bowl Recommends</h1>
@@ -206,7 +231,6 @@
             add salt and toss again.  Spread in a single layer on a baking 
             sheet.  Bake about 15 minutes.  Cook on baking sheet.
          </p>
-
          <h2>Dried Beef Sticks</h2>
          <ul>
             <li>5 lbs. ground chuck</li>
@@ -223,7 +247,6 @@
             8 hours (turn half-way through).
          </p>
       </aside>
-
 
    </body>
 
