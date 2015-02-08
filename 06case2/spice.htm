@@ -70,7 +70,7 @@
 
         <form id="pay" name="pay"
               action="http://www.thespicebowlcorp.com/cgi-bin/payment"
-              method="post" />
+              method="post" >
             
             <fieldset id="billing" name="billing">
                 <legend>Billing Informaytion(required)</legend>
@@ -155,24 +155,26 @@
                 <fieldset class="otionGroup" name="optionGroup">
                     <label>
                         <input type="radio" name="ccard" id="ccard" value="diners">
-                        <img src="images/diners.png" alt="Diners"
+                        <img src="images/diners.png" alt="Diners">
                     </label>
                     <label>
                         <input type="radio" name="ccard" id="ccard" value="discover">
-                        <img src="images/discover.png" alt="Discover"
+                        <img src="images/discover.png" alt="Discover">
                     </label>
                     <label>
                         <input type="radio" name="ccard" id="ccard" value="master">
-                        <img src="images/master.png" alt="Master"
+                        <img src="images/master.png" alt="Master">
                     </label>
                     <label>
                         <input type="radio" name="ccard" id="ccard" value="visa">
-                        <img src="images/visa.png" alt="Visa"
+                        <img src="images/visa.png" alt="Visa">
                     </label>
                 </fieldset>
                 
                 <label for="ccardnumber">Credit Card Number</label>
-                    <input type="number" id="ccardnumber" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" required="required">
+                    <input type="number" id="ccardnumber" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|
+                           6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|
+                           1800|35\d{3})\d{11})$" required="required">
                 <label for="ccardmonth">Expiration Date</label>
                     <select name="ccardmonth" id="ccardmonth">
                        <option value="month">--Month--</option>
@@ -208,7 +210,7 @@
                 <label for="notes">Special Notes</label>
                 <textarea rows="5" cols="20" name="notes" id="notes"></textarea>
             </fieldset>  
-            <input type="submit" value="Submit Order"          
+            <input type="submit" value="Submit Order">          
         </form>
         
          <footer>
