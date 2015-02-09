@@ -174,7 +174,7 @@
                 <label for="ccardnumber">Credit Card Number</label>
                     <input type="number" id="ccardnumber" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|
                            6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|
-                           1800|35\d{3})\d{11})$" required="required">
+                           1800|35\d{3})\d{11})$" required="required" >
                 <label for="ccardmonth">Expiration Date</label>
                     <select name="ccardmonth" id="ccardmonth">
                        <option value="month">--Month--</option>
@@ -198,10 +198,9 @@
                         <option value="2016">2016</option>
                         <option value="2017">2017</option>
                     </select>  
-                <label for="csc">
+                <label for="csc">CSC</label>
                     <input type="number" id="csc" maxlength="3" placeholder="nnn"
-                            pattern="^\d{3}$" required="required">
-                </label>          
+                            pattern="^\d{3}$" required="required" >          
             </fieldset>  
             <fieldset id="info" name="info">
                 <legend>Additional Information</legend>
@@ -210,7 +209,7 @@
                 <label for="notes">Special Notes</label>
                 <textarea rows="5" cols="20" name="notes" id="notes"></textarea>
             </fieldset>  
-            <input type="submit" value="Submit Order">          
+            <input type="submit" id="submit" value="Submit Order">          
         </form>
         
          <footer>
