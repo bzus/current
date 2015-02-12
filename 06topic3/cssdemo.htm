@@ -22,7 +22,8 @@
 
       <script src="modernizr-1.5.js"></script>
 
-      <link href="wm.css" rel="stylesheet" type="text/css" />
+      <link href="css/wm.css" rel="stylesheet" type="text/css" />
+      <link href="css/cssforms.css" rel="stylesheet" type="text/css" /> 
 
    </head>
 
@@ -30,7 +31,7 @@
    <body>
 
       <header>
-         <img src="wmlogo.png" alt="WidgetMage" />
+         <img src="images/wmlogo.png" alt="WidgetMage" />
          <nav class="horizontal">
             <ul>
                <li><a href="#">Home</a></li>
@@ -77,12 +78,31 @@
          <p>Select the CSS style values from the form below and preview the
             effect on the sample text in the preview box.
          </p>
-
-
+          
+          <form>
+        <fieldset id="textstring" name="textstrng">
+            <label for="sampletext">Enter your sample text below</label>
+                <textarea id="sampletext" name="sampletext" wrap="hard"></textarea>
+               
+        </fieldset>
+        <fieldset id="fonts" name="fonts">
+            <legend>Fonts</legend>
+               
+        </fieldset>
+        <fieldset id="colors" name="colors">
+            <legend>Colors</legend>
+               
+        </fieldset>
+        <fieldset id="sizes" name="sizes">
+               <legend>Sizes</legend>
+        </fieldset>
+       </form>  
+          
          <h2>Rendered Text</h2>
          <div id="output"></div>
       </section>
 
+       
        
    </body>
 
