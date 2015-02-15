@@ -82,12 +82,33 @@
           <form>
         <fieldset id="textstring" name="textstrng">
             <label for="sampletext">Enter your sample text below</label>
-                <textarea id="sampletext" name="sampletext" wrap="hard"></textarea>
+                <textarea id="sampletext" name="sampletext" autofocus="autofocus" tabindex="1" wrap="hard"></textarea>
                
         </fieldset>
         <fieldset id="fonts" name="fonts">
             <legend>Fonts</legend>
-               
+              <label>Font Family</label>
+               <select name="fontfamily">
+                  <optgroup label="Generic">
+                      <option value="default">default</option>
+                      <option value="serif">serif</option>
+                      <option value="sans-serif">sans-serif</option>
+                      <option value="monospace">monospace</option>
+                      <option value="cursive">cursive</option>
+                      <option value="fantasy">fantasy</option>
+                  </optgroup>
+                  <optgroup label="Specific">
+                      <option value="Arial">Arial</option>
+                      <option value="'Book Antiqua'">'Book Antiqua'</option>
+                      <option value="'Courier New'">'Courier New'</option>
+                      <option value="Geneva">Geneva</option>
+                      <option value="Helvetica">Helvetica</option>
+                      <option value="Impact">Impact</option>
+                      <option value="Palatino">Palatino</option>
+                      <option value="'Times New Roman'">'Times New Roman'</option>
+                  </optgroup>
+                   
+               </select>
         </fieldset>
         <fieldset id="colors" name="colors">
             <legend>Colors</legend>
