@@ -141,10 +141,18 @@
         </fieldset>
         <fieldset id="colors" name="colors">
             <legend>Colors</legend>
-
+                <label for="color">Font Color (hexadecimal)</label>
+                <input name="color" id="color" type="color" placeholder="#rrggbb" default="#000000">
+                
+                <label for="backgroundcolor">Background Color (hexadecimal)</label>
+                <input name="backgroundcolor" id="backgroundcolor" type="color" placeholder="#rrggbb" default="#FFFFFF">
         </fieldset>
         <fieldset id="sizes" name="sizes">
                <legend>Sizes</legend>
+                   <label for="fontsize">Font Size (px)</label>
+                       <label class="labels">8</label>
+                       <input name="fontsize" id="fontsize" type="range" value="14" min="8" max="40" step="1">
+                       <label class="labels">40</label>
         </fieldset>
        </form>  
           

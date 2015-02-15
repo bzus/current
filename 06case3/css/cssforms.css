@@ -87,6 +87,18 @@ input[type="button"] {
    margin: 10px;
 }
 
+/* range slider style */
+
+.labels {
+    clear: none; 
+    font-size: 0.7em; 
+    margin: 10px 0px; 
+    text-align: center; 
+    width: 10px;
+}
+
+#fontsize, #letterspacing, #wordspacing, #lineheight, #textindent {width: 235px;}
+
 
 
 
