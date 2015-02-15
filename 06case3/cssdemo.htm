@@ -87,8 +87,8 @@
         </fieldset>
         <fieldset id="fonts" name="fonts">
             <legend>Fonts</legend>
-              <label>Font Family</label>
-               <select name="fontfamily">
+              <label for="fontfamily">Font Family</label>
+               <select name="fontfamily" id="fontfamily">
                   <optgroup label="Generic">
                       <option value="default">default</option>
                       <option value="serif">serif</option>
@@ -106,13 +106,42 @@
                       <option value="Impact">Impact</option>
                       <option value="Palatino">Palatino</option>
                       <option value="'Times New Roman'">'Times New Roman'</option>
-                  </optgroup>
-                   
+                  </optgroup>            
                </select>
+            <label for="fontstyle">Font Style</label>
+                <select name="fontstyle" id="fontstyle">
+                    <option value="normal">normal</option>
+                    <option value="italic">italic</option>
+                    <option value="oblique">oblique</option>
+                </select>
+            <label for="fontweight">Font Weight</label>
+                <select name="fontweight" id="fontweight">
+                    <option value="normal">normal</option>
+                    <option value="bold">bold</option>
+                </select>
+            <label for="textdecoration">Text Decoration</label>
+                <select name="textdecoration" id="textdecoration">
+                    <option value="none">none</option>
+                    <option value="line-through">line-through</option>
+                    <option value="overline">overline</option>
+                    <option value="underline">underline</option>
+                </select>
+            <label for="texttransform">Text Transform</label>
+                <select name="texttransform" id="texttransform">
+                    <option value="none">none</option>
+                    <option value="capitalize">capitalize</option>
+                    <option value="lowercase">lowercase</option>
+                    <option value="uppercase">uppercase</option>
+                </select>
+            <label for="fontvariant">Font Variant</label>
+                <select name="fontvariant" id="fontvariant">
+                    <option value="normal">normal</option>
+                    <option value="small-caps">small-caps</option>
+                </select>
         </fieldset>
         <fieldset id="colors" name="colors">
             <legend>Colors</legend>
-               
+
         </fieldset>
         <fieldset id="sizes" name="sizes">
                <legend>Sizes</legend>
