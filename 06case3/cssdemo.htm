@@ -21,9 +21,9 @@
       <title>CSS Styles Demo</title>
 
       <script src="modernizr-1.5.js"></script>
-
+      <script src="css/rundemo.js" ></script>    
       <link href="css/wm.css" rel="stylesheet" type="text/css" />
-      <link href="css/cssforms.css" rel="stylesheet" type="text/css" /> 
+      <link href="css/cssforms.css" rel="stylesheet" type="text/css" />
 
    </head>
 
@@ -80,11 +80,13 @@
          </p>
           
           <form>
+          
         <fieldset id="textstring" name="textstrng">
             <label for="sampletext">Enter your sample text below</label>
                 <textarea id="sampletext" name="sampletext" autofocus="autofocus" tabindex="1" wrap="hard"></textarea>
                
         </fieldset>
+        
         <fieldset id="fonts" name="fonts">
             <legend>Fonts</legend>
               <label for="fontfamily">Font Family</label>
@@ -139,6 +141,7 @@
                     <option value="small-caps">small-caps</option>
                 </select>
         </fieldset>
+        
         <fieldset id="colors" name="colors">
             <legend>Colors</legend>
                 <label for="color">Font Color (hexadecimal)</label>
@@ -147,15 +150,36 @@
                 <label for="backgroundcolor">Background Color (hexadecimal)</label>
                 <input name="backgroundcolor" id="backgroundcolor" type="color" placeholder="#rrggbb" default="#FFFFFF">
         </fieldset>
+        
         <fieldset id="sizes" name="sizes">
                <legend>Sizes</legend>
                    <label for="fontsize">Font Size (px)</label>
                        <label class="labels">8</label>
                        <input name="fontsize" id="fontsize" type="range" value="14" min="8" max="40" step="1">
                        <label class="labels">40</label>
+                       
+                   <label for="letterspacing">Letter Spacing (px)</label>
+                       <label class="labels">0</label>
+                       <input name="letterspacing" id="letterspacing" type="range" value="0" min="0" max="10" step="1">
+                       <label class="labels">10</label>
+                       
+                  <label for="wordspacing">Word Spacing (px)</label>
+                      <label class="labels">0</label>
+                      <input name="wordspacing" id="wordspacing" type="range" value="0" min="0" max="10" step="1">
+                      <label class="labels">10</label>
+                  
+                  <label for="lineheight">Line Height (em)</label>
+                      <label class="labels">0</label>
+                      <input name="lineheight" id="lineheight" type="range" value="1" min="0" max="4" step="0.2">
+                      <label class="labels">4</label>
+                      
+                  <label for="textindent">Text Indent</label>
+                      <label class="labels">0</label>
+                      <input name="textindent" id="textindent" type="range" value="0" min="0" max="10" step="1">
+                      <label class="labels">10</label>
         </fieldset>
+            <input name="removestyles" id="removestyles" type="button" value="Remove Styles">
        </form>  
-          
          <h2>Rendered Text</h2>
          <div id="output"></div>
       </section>
@@ -165,3 +189,6 @@
    </body>
 
 </html>
+
+
+
