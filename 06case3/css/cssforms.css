@@ -97,7 +97,9 @@ input[type="button"] {
     width: 10px;
 }
 
-#fontsize, #letterspacing, #wordspacing, #lineheight, #textindent {width: 235px;}
+#fontsize, #letterspacing, 
+#wordspacing, #lineheight, 
+#textindent {width: 235px;}
 
 
 
