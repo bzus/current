@@ -1,0 +1,62 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 8
+   Tutorial Case
+
+   Print Styles
+   Author: Boris Zalusilo
+   Date:   12/03/12
+
+   Filename:         print.css
+   Supporting Files: 
+
+*/
+
+/* Styles to be used for print displays */
+
+header, nav, footer {
+	display: none;
+}
+
+@page {
+	size: 8.5 11in portrait;
+	margin: 0.5in;
+}
+
+article {
+	display: block;
+	page-break-after: always;
+	page-break-inside: avoid;
+}
+
+h1 {
+	font-size: 28pt;
+	text-align: center;
+	width: 100%;
+}
+
+#photo1 {
+	display: block;
+	margin: 0in auto;
+	width: 4in;
+}
+
+figure {
+	display: block;
+	text-align: center;
+	page-break-after: always;
+	page-break-inside: avoid;
+}
+
+figure img {
+	width: 5in;
+}
+
+figure figcaption {
+	font-size: 20pt;
+}
+
+figure:last-of-type {
+	page-break-after: avoid;
+}
+

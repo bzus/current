@@ -1,0 +1,56 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 8
+   Tutorial Case
+
+   Special Effects style sheet
+   Author: Boris Zakusilo
+   Date:   12/03/12
+
+   Filename:         effects.css
+   Supporting Files: borderimg.png
+
+*/
+
+
+#main h1 {
+	color: rgb(90,127,0);
+	text-shadow: 1px 1px 0px black,
+	rgba(90,127,0,0.7) 5px 5px 10px;
+}
+
+figure img {
+	border-radius: 25px;
+	box-shadow: rgba(0,0,0,0.6) 10px 10px 15px;
+}
+
+#main {
+	box-shadow: inset rgba(0,0,0,0.3) -5px -5px 10px; 
+}
+
+#main table {
+	box-shadow: black 5px 5px 5px;
+}
+
+#photo4 {
+	-webkit-transform: rotate(-30deg);
+	-o-transform: rotate(-30deg);
+	-moz-transform: rotate(-30deg);
+	opacity: 0.7;
+}
+
+#photo5 {
+	-webkit-transform: rotate(30deg);
+	-o-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	opacity: 0.7;
+}
+
+article {
+	background: -webkit-linear-gradient(black, rgb(51,101,51) 20%, white);
+}
+
+#photo1 {
+	border-width: 10px;
+	border-image: url("borderimg.png") 50 repeat;
+}
