@@ -13,7 +13,7 @@
 */
 
 
-#main h1 {
+/* #main h1 {
 	color: rgb(90,127,0);
 	text-shadow: 1px 1px 0px black,
 	rgba(90,127,0,0.7) 5px 5px 10px;
@@ -53,4 +53,14 @@ article {
 #photo1 {
 	border-width: 10px;
 	border-image: url("borderimg.png") 50 repeat;
+}   */
+
+#main h1 {
+    color: rgb(90,127,0);
+    text-shadow: black 1px 1px 0,
+                 rgba(90,127,0, 0.7) 5px 5px 10px;  
+}
+
+figure img {
+    border-radius: 
 }
